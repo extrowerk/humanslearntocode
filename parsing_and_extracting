@@ -1,0 +1,8 @@
+####Parsing and Extracting
+####From elon.musk@tesla.com Sat Jan 5 09:14:16 2008
+
+data = "From elon.musk@tesla.com Sat Jan 5 09:14:16 2008"
+atpos = data.find("@")
+spacepos= data.find(" ",atpos) #this atpos second argument gives the line from where it should start to search
+emailhost=data[atpos+1 : spacepos]
+print("The data you were trying to search is:", emailhost)
