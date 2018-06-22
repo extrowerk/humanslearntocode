@@ -18,7 +18,7 @@ for line in handle:
     list_0 = line.split() #here we break the line in words
     time = list_0[5] #here we select the time from the sequence where time is the 5th element
     time = list_0[5].split(":") #here we break the time string using the : symbol into more pieces
-    hour = time[0] #here we assing to hour variable the first piece from the secquence above which is the hour
+    hour = time[0] #here we assing to hour variable the first piece from the sequence above which is the hour
 
     if hour not in counts:
         counts[hour] = 1
@@ -30,7 +30,3 @@ for line in handle:
 
 for key, value in list_1:
     print(key, value) #in the end we choose to print the key, values from the sorted list
-
-
-
-
